@@ -2,10 +2,11 @@ block header
 	.container
 		.top-panel
 			.logo
-				i(class="fa fa-paper-plane" aria-hidden="true")
-				img(src="" width="202" height="23" alt="logo Fashionpress")
+				a(href="#")
+					//i(class="fa fa-paper-plane" aria-hidden="true")
+					//img(src="" width="202" height="23" alt="logo Fashionpress")
 
-		nav(class="navigate")
-			.menu--header
-				each item in nav_items
-					a(href="#").nav_items= item
+			nav(class="navigate")
+				.menu
+					each item in nav_items
+						a(href="#").nav_items= item

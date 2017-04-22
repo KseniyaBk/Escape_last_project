@@ -1,21 +1,28 @@
-.menu
-  &_item
-    display: block
-    text-decoration: none
-    font-size: 15px
-    font-weight: 500
-    color: #404040
-    border-bottom: #e2e2e3
-    &:hover
-      background: #ffffff
-      box-shadow: inset -3px 0px 0px 0px $accent
-    &::before
-      content: ""
+header
+  padding-top: 50px
+  position: absolute
+  width: 100%
+  z-index: 1
+  top: 0
+  left: 0
+  color: $accent
+  .logo
+    a
+      background: url("../images/Logo.png")
+      background-size: cover
+      background-repeat: no-repeat
+      width: 139px
+      height: 28px
       display: inline-block
-      width: 0
-      height: 0
-      border-style: solid
-      border-width: 5.5px 0 5.5px 6px
-      border-color: transparent transparent transparent #e8e681
-
-
+    //color: $accent
+    //.fa
+    //  font-size: 34px
+  a
+    text-decoration: none
+    color: $accent
+    padding-right: 30px
+    &:last-child
+      padding-right: 0
+.top-panel
+  display: flex
+  justify-content: space-between

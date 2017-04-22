@@ -4,10 +4,12 @@
   flex-direction: row
   padding-top: 89px
   padding-bottom: 98px
+  padding-left: 40px
   .skill
-    max-width: 48%
     display: flex
     align-items: center
+    max-width: 396px
+    padding-left: 0
     .fa
       color: $accent
       background: $point
@@ -19,7 +21,19 @@
       text-align: center
       display: inline-block
       box-sizing: border-box
+      margin-right: 20px
+.skill:nth-child(2n+1)
+  padding-right: 90px
 
+.partner_block
+  margin: 60px
+  .container
+    display: flex
+    justify-content: space-around
+    img
+      filter: grayscale(100%)
+      &:hover
+        filter: grayscale(0%)
 
 
 .client_block
@@ -27,6 +41,8 @@
   text-align: center
   padding-top: 102px
   padding-bottom: 96px
+  .wrap-flex
+    flex-direction: column
 
   .title_block
     text-align: center
@@ -36,30 +52,99 @@ h3
   line-height: 1.2
   font-weight: normal
   text-align: center
+  margin: 0
   span
     font-weight: bold
 .client_box
+  //max-width: 908px
+  display: flex
+  justify-content: flex-start
   img
     +radius
+
+
+.client_box:last-child
+  justify-content: flex-end
+  flex-direction: row-reverse
+blockquote
+  border: 1px solid #f3f3f3
+  background: #ffffff
+  position: relative
+  span
+    position: absolute
+    background: url("../images/")
+    
 .title_block p
-      color: $main
-      font-size: 18px
-      line-height: 1.2
-      text-align: center
+  color: $main
+  font-size: 18px
+  line-height: 1.2
+  text-align: center
+  margin-top: 21px
+  margin-bottom: 55px
+
 .team_block
   background: #111111
   padding-top: 105px
   padding-bottom: 108px
 
 .team_block
-  h3, .title_block p
+  h3
+    margin: 0
     color: $accent
+.title_block
+  p.title_description
+    margin-top: 22px
+    color: rgb(119, 119, 119)
+
+
 .team_wrap
   display: flex
+  justify-content: center
 
 .team_person_wrap
+  margin: 0 26px
+  margin-top: 80px
+  margin-bottom: 50px
   img
     +radius
+    border: 7px solid $accent
+    box-sizing: border-box
 
+
+.contact_person_team
+  text-align: center
+  color: $accent
+  a
+    +radius
+    border: 3px solid $accent
+    display: inline-block
+    width: 41px
+    height: 41px
+    box-sizing: border-box
+    .fa
+      font-size: 18px
+      display: inline-block
+      padding: 10px 0
+
+.title_block
+  text-align: center
+  p.description
+    display: inline-block
+    font-size: 16px
+    color: rgb(235, 235, 235)
+    line-height: 1.2
+    text-align: center
+    max-width: 582px
+    text-align: center
+
+p.name_team_person
+  font-size: 14px
+  color: $accent
+  font-weight: bold
+  line-height: 3.571
+  text-align: center
+p.appointment
+  color: #ebebeb
+  font-size: 14px
 
 
