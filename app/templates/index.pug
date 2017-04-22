@@ -1,0 +1,90 @@
+extends includes/layout
+
+mixin skills-blocks(skills_array)
+	.skills
+		each item in skills_array
+			.skill
+				.image_skill
+					i(class=`fa =+ ${item.fa}` aria-hidden="true")
+				.wrap_skill_text
+					h4.skill__name= item.title
+					p.skill__article= item.article
+
+
+
+block promo
+	include includes/promo
+
+block content
+	.container
+		+skills-blocks(skills)
+	.client_block
+		.container
+			.title_block
+				h3.title Awesome
+					span Clients
+				p See what nice things our clients said about us.
+			.client_box
+				img(src="uploads/client-1.jpg" alt="photo")
+				blockquote
+					p.quote “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”
+					p.name_client
+					a(href="#") - Jamie Richardson, Founder of Cocoa Media
+			.client_box
+				img(src="uploads/client-2.jpg" alt="photo")
+				blockquote
+					p.quote “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”
+					p.name_client
+					a(href="#") - Bart Thompson, Founder of Rainel
+	.partner_block
+		.container
+			img(src="uploads/" width="" height="" alt="logo partner")
+			img(src="uploads/" width="" height="" alt="logo partner")
+			img(src="uploads/" width="" height="" alt="logo partner")
+			img(src="uploads/" width="" height="" alt="logo partner")
+	.team_block
+		.container
+			.title_block
+				h3.title Amazing
+					span Team
+				p These wonderful people make work enjoyable.
+				.team_wrap
+					.team_person_wrap
+						img(src="uploads/team-person-1.jpg" width="222" height="221" alt="photo")
+						p.name_team_person Kimberly Thompson
+						p.appointment Marketer
+						.contact_person_team
+							a(class="twitter")
+								i(class="fa fa-twitter" aria-hidden="true")
+							a(class="fb")
+								i(class="fa fa-facebook" aria-hidden="true")
+							a(class="pin")
+								i(class="fa fa-pinterest-p" aria-hidden="true")
+					.team_person_wrap
+						img(src="uploads/team-person-2.jpg" width="222" height="221" alt="photo")
+						p.name_team_person
+						p.appointment
+						.contact_person_team
+							a(class="twitter")
+								i(class="fa fa-twitter" aria-hidden="true")
+							a(class="fb")
+								i(class="fa fa-facebook" aria-hidden="true")
+							a(class="pin")
+								i(class="fa fa-pinterest-p" aria-hidden="true")
+					.team_person_wrap
+						img(src="uploads/team-person-3.jpg" width="222" height="221" alt="photo")
+						p.name_team_person
+						p.appointment
+						.contact_person_team
+							a(class="twitter")
+								i(class="fa fa-twitter" aria-hidden="true")
+							a(class="fb")
+								i(class="fa fa-facebook" aria-hidden="true")
+							a(class="pin")
+								i(class="fa fa-pinterest-p" aria-hidden="true")
+				p.description Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.
+
+
+
+block footer
+	include includes/footer

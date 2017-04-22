@@ -1,0 +1,55 @@
+{
+  "title": "Hello world",
+  "skills": [
+    {
+      "fa": "fa-male",
+      "title": "Branding & Identity",
+      "article": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+    },
+    {
+      "fa": "fa-mobile",
+      "title": "Mobile App Development",
+      "article": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+    },
+    {
+      "fa": "fa-star",
+      "title": "ui/ux",
+      "article": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+    },
+    {
+      "fa": "fa-window-maximize",
+      "title": "Web & Graphic Design",
+      "article": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+    },
+    {
+      "fa": "fa-video-camera",
+      "title": "Animations",
+      "article": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+    },
+    {
+      "fa": "fa-camera",
+      "title": "Photography",
+      "article": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+    }
+  ],
+  "clients":[
+    {
+      "img": "client-1",
+      "cite": "“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” ",
+      "name": "- Jamie Richardson, Founder of Cocoa Media"
+    },
+    {
+      "img": "client-2",
+      "cite": "“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” ",
+      "name": "- Jamie Richardson, Founder of Cocoa Media"
+    }
+  ],
+
+  "nav_items": [
+    "Home",
+    "Services",
+    "Clients",
+    "Team",
+    "Contact"
+  ]
+}
