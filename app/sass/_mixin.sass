@@ -1,2 +1,13 @@
 =radius
   border-radius: 50%
+
+$tablet-up: '(max-width: 700px)'
+$desktop-up: '(min-width: 900px)'
+
+=tablet
+  @media #{$tablet-up}
+    @content
+
+=desktop
+  @media #{$desktop-up}
+    @content

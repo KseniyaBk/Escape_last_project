@@ -22,6 +22,7 @@
       display: inline-block
       box-sizing: border-box
       margin-right: 20px
+
 .skill:nth-child(2n+1)
   padding-right: 90px
 
@@ -32,9 +33,10 @@
     justify-content: space-around
     img
       filter: grayscale(100%)
+      opacity: 0.5
       &:hover
         filter: grayscale(0%)
-
+        opacity: 1
 
 .client_block
   background: $client
@@ -46,6 +48,7 @@
 
   .title_block
     text-align: center
+
 h3
   font-size: 54px
   color: $point
@@ -55,26 +58,58 @@ h3
   margin: 0
   span
     font-weight: bold
+
 .client_box
-  //max-width: 908px
   display: flex
   justify-content: flex-start
+  +tablet
+    flex-direction: column
   img
     +radius
-
 
 .client_box:last-child
   justify-content: flex-end
   flex-direction: row-reverse
+
 blockquote
   border: 1px solid #f3f3f3
   background: #ffffff
   position: relative
+  padding-top: 44px
+  box-sizing: border-box
+  padding-left: 85px
+  padding-right: 105px
   span
+    content: ''
     position: absolute
-    background: url("../images/")
-    
-.title_block p
+    background: url("../images/arrow_cite.svg")
+    background-repeat: no-repeat
+    background-size: cover
+    width: 21px
+    height: 26px
+    top: 40%
+  p.quote
+    font-size: 20px
+    color: rgb(119, 119, 119)
+    line-height: 1.4
+    text-align: center
+  .name_client a
+    text-decoration: none
+    font-size: 16px
+    color: rgb(118, 144, 197)
+    line-height: 2.25
+    text-align: center
+
+.left-arrow
+  left: -21px
+  transform: scaleX(-1)
+
+blockquote span.right_arrow
+  transform: scaleX(1)
+  right: -21px
+.client_box:first-child
+  padding-bottom: 41px
+.title_block .title_relation
   color: $main
   font-size: 18px
   line-height: 1.2
@@ -91,11 +126,11 @@ blockquote
   h3
     margin: 0
     color: $accent
+
 .title_block
   p.title_description
     margin-top: 22px
     color: rgb(119, 119, 119)
-
 
 .team_wrap
   display: flex
@@ -103,17 +138,17 @@ blockquote
 
 .team_person_wrap
   margin: 0 26px
-  margin-top: 80px
+  margin-top: 25px
   margin-bottom: 50px
   img
     +radius
     border: 7px solid $accent
     box-sizing: border-box
 
-
 .contact_person_team
   text-align: center
   color: $accent
+  padding-top: 15px
   a
     +radius
     border: 3px solid $accent
@@ -129,22 +164,22 @@ blockquote
 .title_block
   text-align: center
   p.description
-    display: inline-block
-    font-size: 16px
-    color: rgb(235, 235, 235)
-    line-height: 1.2
-    text-align: center
-    max-width: 582px
-    text-align: center
+    color: #ebebeb
+    max-width: 580px
+    margin: 0 auto
+
+
 
 p.name_team_person
   font-size: 14px
   color: $accent
   font-weight: bold
-  line-height: 3.571
   text-align: center
+  padding-top: 22px
+
 p.appointment
   color: #ebebeb
   font-size: 14px
+  padding-top: 10px
 
 

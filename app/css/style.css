@@ -76,6 +76,37 @@ footer a {
   text-decoration: none;
 }
 
+.contact h4 a {
+  font-size: 54px;
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+  font-weight: normal;
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .social a {
+  width: 45%;
+}
+
 header {
   padding-top: 50px;
   position: absolute;
@@ -173,11 +204,13 @@ header a:last-child {
 .partner_block .container img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 .partner_block .container img:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
+  opacity: 1;
 }
 
 .client_block {
@@ -220,6 +253,15 @@ h3 span {
           justify-content: flex-start;
 }
 
+@media (max-width: 700px) {
+  .client_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .client_box img {
   border-radius: 50%;
 }
@@ -238,14 +280,55 @@ blockquote {
   border: 1px solid #f3f3f3;
   background: #ffffff;
   position: relative;
+  padding-top: 44px;
+  box-sizing: border-box;
+  padding-left: 85px;
+  padding-right: 105px;
 }
 
 blockquote span {
+  content: '';
   position: absolute;
-  background: url("../images/");
+  background: url("../images/arrow_cite.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21px;
+  height: 26px;
+  top: 40%;
 }
 
-.title_block p {
+blockquote p.quote {
+  font-size: 20px;
+  color: #777777;
+  line-height: 1.4;
+  text-align: center;
+}
+
+blockquote .name_client a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #7690c5;
+  line-height: 2.25;
+  text-align: center;
+}
+
+.left-arrow {
+  left: -21px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+blockquote span.right_arrow {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  right: -21px;
+}
+
+.client_box:first-child {
+  padding-bottom: 41px;
+}
+
+.title_block .title_relation {
   color: #777777;
   font-size: 18px;
   line-height: 1.2;
@@ -281,7 +364,7 @@ blockquote span {
 
 .team_person_wrap {
   margin: 0 26px;
-  margin-top: 80px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 
@@ -294,6 +377,7 @@ blockquote span {
 .contact_person_team {
   text-align: center;
   color: #ffffff;
+  padding-top: 15px;
 }
 
 .contact_person_team a {
@@ -316,24 +400,21 @@ blockquote span {
 }
 
 .title_block p.description {
-  display: inline-block;
-  font-size: 16px;
   color: #ebebeb;
-  line-height: 1.2;
-  text-align: center;
-  max-width: 582px;
-  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
 }
 
 p.name_team_person {
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
-  line-height: 3.571;
   text-align: center;
+  padding-top: 22px;
 }
 
 p.appointment {
   color: #ebebeb;
   font-size: 14px;
+  padding-top: 10px;
 }
