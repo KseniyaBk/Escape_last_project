@@ -5,11 +5,17 @@
   padding-top: 89px
   padding-bottom: 98px
   padding-left: 40px
+  +tablet
+    padding-bottom: 50px
   .skill
     display: flex
+    flex-wrap: wrap
     align-items: center
     max-width: 396px
     padding-left: 0
+    +tablet
+      margin-bottom: 30px
+      padding-right: 20px
     .fa
       color: $accent
       background: $point
@@ -25,15 +31,20 @@
 
 .skill:nth-child(2n+1)
   padding-right: 90px
+  +tablet
+    padding-right: 20px
 
 .partner_block
   margin: 60px
   .container
     display: flex
+    flex-wrap: wrap
     justify-content: space-around
     img
       filter: grayscale(100%)
       opacity: 0.5
+      +tablet
+        padding: 5%
       &:hover
         filter: grayscale(0%)
         opacity: 1
@@ -43,6 +54,8 @@
   text-align: center
   padding-top: 102px
   padding-bottom: 96px
+  +tablet
+    padding: 50px 5px
   .wrap-flex
     flex-direction: column
 
@@ -56,6 +69,9 @@ h3
   font-weight: normal
   text-align: center
   margin: 0
+  +tablet
+    font-size: 34px
+
   span
     font-weight: bold
 
@@ -64,12 +80,15 @@ h3
   justify-content: flex-start
   +tablet
     flex-direction: column
+
   img
     +radius
 
 .client_box:last-child
   justify-content: flex-end
   flex-direction: row-reverse
+  +tablet
+    flex-direction: column
 
 blockquote
   border: 1px solid #f3f3f3
@@ -79,6 +98,10 @@ blockquote
   box-sizing: border-box
   padding-left: 85px
   padding-right: 105px
+  +tablet
+    padding-top: 35px
+    padding-left: 15px
+    padding-right: 15px
   span
     content: ''
     position: absolute
@@ -93,6 +116,8 @@ blockquote
     color: rgb(119, 119, 119)
     line-height: 1.4
     text-align: center
+    +tablet
+      font-size: 16px
   .name_client a
     text-decoration: none
     font-size: 16px
@@ -107,8 +132,10 @@ blockquote
 blockquote span.right_arrow
   transform: scaleX(1)
   right: -21px
+
 .client_box:first-child
   padding-bottom: 41px
+
 .title_block .title_relation
   color: $main
   font-size: 18px
@@ -135,6 +162,7 @@ blockquote span.right_arrow
 .team_wrap
   display: flex
   justify-content: center
+  flex-wrap: wrap
 
 .team_person_wrap
   margin: 0 26px

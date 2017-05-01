@@ -1,12 +1,17 @@
 header
   padding-top: 50px
+  box-sizing: border-box
   position: absolute
   width: 100%
   z-index: 1
   top: 0
   left: 0
   color: $accent
+  +tablet
+    padding-left:  5%
+    padding-right:  5%
   .logo
+    position: absolute
     a
       background: url("../images/Logo.png")
       background-size: cover
@@ -14,15 +19,71 @@ header
       width: 139px
       height: 28px
       display: inline-block
-    //color: $accent
-    //.fa
-    //  font-size: 34px
-  a
-    text-decoration: none
     color: $accent
-    padding-right: 30px
-    &:last-child
-      padding-right: 0
-.top-panel
-  display: flex
-  justify-content: space-between
+
+
+/****************menu*****************/
+
+.navigate
+  text-align: right
+  +tablet
+    width: 100%
+.navigate li
+  display: inline-block
+  +tablet
+    display: block
+    text-align: center
+
+.navigate ul a
+  display: block
+  text-decoration: none
+  margin-right: 30px
+  color: $accent
+  &:hover
+    border-bottom: 1px solid $accent
+    padding-bottom: 3px
+  +tablet
+    padding: 20px
+    border-bottom: none
+    color: $point
+    &:hover
+      color: $main
+      padding-bottom: 20px
+
+
+.menu-trigger
+  text-align: right
+  display: none
+  +tablet
+    display: block
+  .fa-bars
+    font-size: 30px
+    color: #fff
+.navigate ul
+  +tablet
+    display: none
+    background: $accent
+    padding-bottom: 10%
+
+@media screen and (max-width: 700px )
+  //.menu-trigger
+  //  display: block
+  //.navigate
+  //  width: 100%
+
+  //.navigate ul
+  //  display: none
+  //  background: $accent
+  //  padding-bottom: 10%
+
+  //.navigate li
+  //  display: block
+  //  text-align: center
+  //.navigate ul a
+  //  padding: 20px
+  //  border-bottom: 1px solid $accent
+  //  color: #222222
+  //  &:hover
+  //    border-color: #222222
+  //    padding-bottom: 20px
+

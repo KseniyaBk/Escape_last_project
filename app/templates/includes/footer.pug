@@ -6,32 +6,35 @@ block footer
 					h4
 						a(href="#") Say
 							span Hello
-					p Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)
+					p.appeal_text Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)
 					.social
-						a(href="#")
-							i(class="fa fa-mobile" aria-hidden="true")
-							span (416) 555-0000
-						a(href="#")
-							i(class="fa fa-twitter" aria-hidden="true")
-							span @escape
-						a(href="#")
-							i(class="fa fa-google-plus" aria-hidden="true")
-							span plus.com/escape
-						a(href="#")
-							i(class="fa fa-envelope-o" aria-hidden="true")
-							span hello@escape.com
-						a(href="#")
-							i(class="fa fa-facebook" aria-hidden="true")
-							span facebook.com/escape
-						a(href="#")
-							i(class="fa fa-pinterest" aria-hidden="true")
-							span pinterest.com/escape
+						.columns
+							a(href="#")
+								i(class="fa fa-mobile" aria-hidden="true")
+								span (416) 555-0000
+							a(href="#")
+								i(class="fa fa-twitter" aria-hidden="true")
+								span @escape
+							a(href="#")
+								i(class="fa fa-google-plus" aria-hidden="true")
+								span plus.com/escape
+						.columns
+							a(href="#")
+								i(class="fa fa-envelope-o" aria-hidden="true")
+								span hello@escape.com
+							a(href="#")
+								i(class="fa fa-facebook" aria-hidden="true")
+								span facebook.com/escape
+							a(href="#")
+								i(class="fa fa-pinterest-p" aria-hidden="true")
+								span pinterest.com/escape
 
 
 				.user-form
-					input(type="text")
-					input(type="email")
-					textarea
+					form
+						input(type="text" placeholder="Your Name *")
+						input(type="email" placeholder="Your E-mail *")
+						textarea()
 			.project-author © 2014 Escape by FreebiesXpress • Made In Toronto
 
 

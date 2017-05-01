@@ -7,6 +7,10 @@ block header
 					//img(src="" width="202" height="23" alt="logo Fashionpress")
 
 			nav(class="navigate")
-				.menu
+				a(href="#" class="menu-trigger")
+					i(class="fa fa-bars" aria-hidden="true")
+				//a(href="#").button--toggle
+				ul.menu
 					each item in nav_items
-						a(href="#").nav_items= item
+						li
+							a(href="#").nav_items= item

@@ -3,29 +3,89 @@ footer
   padding-top: 100px
   padding-bottom: 36px
   color: $accent
+  box-sizing: border-box
+  +tablet
+    padding: 2%
+
   a
     color: $accent
     text-decoration: none
 
 .contact
-  h4 a
-    font-size: 54px
-    color: rgb(255, 255, 255)
-    line-height: 1.2
-    text-align: left
-    font-weight: normal
+  max-width: 456px
+  width: 100%
+  margin-right: 50px
+  +tablet
+  margin-right: 0
+  h4
+    margin: 0
+    a
+      font-size: 54px
+      color: rgb(255, 255, 255)
+      line-height: 1.2
+      text-align: left
+      font-weight: normal
   span
     font-weight: bold
-  p
+  p.appeal_text
+    margin-top: 35px
+    margin-bottom: 55px
     font-size: 14px
     color: rgb(255, 255, 255)
-    line-height: 1.2
+    line-height: 1.6
     text-align: left
   .social
     display: flex
     flex-wrap: wrap
+
     a
-      width: 45%
+      margin-bottom: 40px
+      display: block
+      margin-right: 40
+
+      span
+        font-size: 16px
+        line-height: 1.2
+        font-weight: normal
+    .fa
+      width: 47px
+      height: 29px
+      display: inline-block
+      font-size: 30px
+      vertical-align: middle
+
+    .fa-mobile
+      font-size: 40px
+
+.columns:first-child
+  margin-right: 30px
+.user-form
+  max-width: 456px
+input,textarea
+  max-width: 456px
+  min-width: 280px
+  width: 100%
+  border-radius: 3px
+  border: 1px solid #cccccc
+  padding-top: 16px
+  padding-left: 16px
+  padding-bottom: 16px
+  margin-bottom: 29px
+
+input::-webkit-input-placeholder
+  font-size: 16px
+  color: #cccccc
+textarea
+  height: 210px
+
+.project-author
+  margin: 100px 0 0
+  text-align: center
+  border-top: 1px solid #87a0d2
+  padding: 32px 0 0
+
+
+
 
 
 
