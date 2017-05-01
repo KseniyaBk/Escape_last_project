@@ -2,6 +2,7 @@
   border-radius: 50%
 
 $tablet-up: '(max-width: 700px)'
+$laptop-up: '(max-width: 900px)'
 $desktop-up: '(min-width: 900px)'
 
 =tablet
@@ -10,4 +11,7 @@ $desktop-up: '(min-width: 900px)'
 
 =desktop
   @media #{$desktop-up}
+    @content
+=laptop
+  @media #{$laptop-up}
     @content

@@ -7,16 +7,22 @@
   padding-left: 40px
   +tablet
     padding-bottom: 50px
+    justify-content: center
+  +laptop
+
   .skill
     display: flex
-
     align-items: center
     max-width: 396px
     padding-left: 0
     +tablet
       margin-bottom: 30px
-      padding-right: 20px
-      flex-wrap: wrap 
+      flex-wrap: wrap
+    +laptop
+      padding-right: 0
+      flex-wrap: wrap
+      max-width: 300px
+
     .fa
       color: $accent
       background: $point
@@ -33,7 +39,11 @@
 .skill:nth-child(2n+1)
   padding-right: 90px
   +tablet
-    padding-right: 20px
+    padding: 0
+  +laptop
+    padding: 15px
+    //padding-right: 20px
+
 
 .partner_block
   margin: 60px
@@ -44,7 +54,7 @@
     img
       filter: grayscale(100%)
       opacity: 0.5
-      +tablet
+      +laptop
         padding: 5%
       &:hover
         filter: grayscale(0%)

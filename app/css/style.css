@@ -11,9 +11,10 @@ p {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 960px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 10px;
 }
 
 .btn {
@@ -219,6 +220,9 @@ header .logo a {
 @media (max-width: 700px) {
   .skills {
     padding-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -236,9 +240,17 @@ header .logo a {
 @media (max-width: 700px) {
   .skills .skill {
     margin-bottom: 30px;
-    padding-right: 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills .skill {
+    padding-right: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 300px;
   }
 }
 
@@ -262,7 +274,13 @@ header .logo a {
 
 @media (max-width: 700px) {
   .skill:nth-child(2n+1) {
-    padding-right: 20px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .skill:nth-child(2n+1) {
+    padding: 15px;
   }
 }
 
@@ -286,7 +304,7 @@ header .logo a {
   opacity: 0.5;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .partner_block .container img {
     padding: 5%;
   }
@@ -549,9 +567,9 @@ footer {
   box-sizing: border-box;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   footer {
-    padding: 2%;
+    padding: 3% 2% 3%;
   }
 }
 
@@ -564,7 +582,12 @@ footer a {
   max-width: 456px;
   width: 100%;
   margin-right: 50px;
-  margin-right: 0;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    margin-right: 0;
+  }
 }
 
 .contact h4 {
@@ -592,6 +615,12 @@ footer a {
   text-align: left;
 }
 
+@media (max-width: 900px) {
+  .contact p.appeal_text {
+    margin-bottom: 25px;
+  }
+}
+
 .contact .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,7 +632,13 @@ footer a {
 .contact .social a {
   margin-bottom: 40px;
   display: block;
-  margin-right: 40;
+  margin-right: 40px;
+}
+
+@media (max-width: 900px) {
+  .contact .social a {
+    margin-bottom: 10px;
+  }
 }
 
 .contact .social a span {
@@ -658,4 +693,11 @@ textarea {
   text-align: center;
   border-top: 1px solid #87a0d2;
   padding: 32px 0 0;
+}
+
+@media (max-width: 900px) {
+  .project-author {
+    padding: 2% 0 0;
+    margin: 5% 0 0;
+  }
 }
